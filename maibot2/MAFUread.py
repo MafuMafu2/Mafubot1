@@ -93,7 +93,7 @@ def helpmessage():
                   "╠➥ Tagall 全體標註" + "\n" + \
                   "╠➥ Read On/Off/Reset 查看已讀開關" + "\n" + \
                   "╠➥ Read 查看已讀" + "\n" + \
-				  "╠➥ reread on/off
+		  "╠➥ reread on/off" + "\n" + \
                   "║" + "\n" + \
                   "╚═〘Make By Mafu〙"
     return helpMessage
