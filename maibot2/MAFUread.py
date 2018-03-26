@@ -88,7 +88,7 @@ def helpmessage():
     helpMessage = "╔═══════════════" + "\n" + \
                   "╠ MAFU BOT" + "\n" + \
                   "╠選單列表════════" + "\n" + \
-                  "╠➥ mafu 指令表" + "\n" + \
+                  "╠➥ help 指令表" + "\n" + \
                   "╠➥ Me 查看個人資料" + "\n" + \
                   "╠➥ Tagall 全體標註" + "\n" + \
                   "╠➥ Read On/Off/Reset 查看已讀開關" + "\n" + \
@@ -162,7 +162,9 @@ def lineBot(op):
                     return
                
 #==============================================================================#
- 
+                 if text.lower() == 'help':
+                    helpMessage = helpmessage()
+                    nadya.sendMessage(to, str(helpMessage))
 #==============================================================================#
                 elif text.lower() == 'speed':
                     start = time.time()
